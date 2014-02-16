@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#logo{
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/* the ipad iphone menu button border color*/
+.navbar-inverse .navbar-toggle { 
+border-color: #E78E1D;
+}
+/* the ipad iphone menu button 3 bars color*/
+.navbar-inverse .navbar-toggle .icon-bar {
+background-color: #E78E1D;
+}
+/* regular nav bar menu text color and the ipad iphone drop down menu color*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #F93 !important;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #000 !important;
+  background-color: #FFFFFF !important;
+}
+
+.slide1{
+	width: 100%;
+	height: 300px  !important;
+	background-repeat: repeat-x;
+	background-image: url(../images/slide1.png);
+	background-position: center;
+	background-size: auto 300px;
+}
+.slide2{
+	width: 100%;
+	height: 300px  !important;
+	background-repeat: repeat-x;
+	background-image: url(../images/slide1.png);
+	background-position: center;
+	background-size: auto 300px;
+}
+.slide3{
+	width: 100%;
+	height: 300px  !important;
+	background-repeat: repeat-x;
+	background-image: url(../images/slide1.png);
+	background-position: center;
+	background-size: auto 300px;
+}
+
+
+
+/*silde-indicator content */
+.carousel-indicators {
+	bottom: 0px;   /* override bootstrap code . indicators bottom margin to sldie */
+	float: left;
+	left: 0px; 
+	z-index: 15;
+	width:50%; 
+	padding-left: 0px;
+	margin-left: 0px; 
+}
+ul, ol {
+	margin-bottom: 0px; /* override bootstrap code indicators bottom margin to sldie*/
+}
+.carousel-indicators li {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #000 \9;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #FFF;
+	border-radius: 0px;  
+	margin-bottom: 0px;  /* override bootstrap code  indicators bottom margin to sldie*/
+}
+#minislide1{
+	background-color: #F4F4F4;
+	background-image: url(../images/minislide1.png);
+}
+#minislide2{
+	background-color: #F4F4F4;
+	background-image: url(../images/minislide1.png);
+}
+#minislide3{
+	background-color: #F4F4F4;
+	background-image: url(../images/minislide1.png);
+}
+.carousel-indicators .active {
+  width: 50px;
+  height: 30px;
+  margin: 1px;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
+.carousel-indicators li:hover {
+  margin: 1px;
+  width: 50px;
+  height: 30px;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+}
+
+
+/* marketing content */
+
+.story{
+	width:240px;
+	height:400px;
+	margin: 5px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    border: 1px solid rgb(183, 192, 199);
+    color: rgb(136, 136, 136);
+    float: left;
+    font-size: 0.9em;
+    padding: 6px;
+    position: relative;
+    text-decoration: none;
+}
+
+.story img{
+	width: 225px;
+	height: 225px;
+}
+.story h2{
+	font-size: small;
+	color: #FF6699;
+}
+@media only screen and (min-width: 250px) {
+.col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+}
+
+.col-lg-3 {
+    width: 100%;
+}
+
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 500px) {
+.col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+}
+
+.col-lg-3 {
+    width: 50%;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 750px) {
+.col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+}
+
+.col-lg-3 {
+    width: 33.33%;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+.col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+}
+
+.col-lg-3 {
+    width: 25%;
+}
+}
+
+.mycontainer {
+	/* [disabled]padding-right: 15px; */
+	/* [disabled]padding-left: 15px; */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mycontainer:before,
+.mycontainer:after {
+  display: table;
+  content: " ";
+}
+
+.mycontainer:after {
+  clear: both;
+}
+
+.mycontainer:before,
+.mycontainer:after {
+  display: table;
+  content: " ";
+}
+
+.mycontainer:after {
+  clear: both;
+}
+@media (min-width: 250px) {
+  .mycontainer {
+    width: 250px;
+  }
+
+}
+@media (min-width: 500px) {
+  .mycontainer {
+    width: 500px;
+  }
+}
+@media (min-width: 750px) {
+  .mycontainer {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mycontainer {
+	width: 1000px;
+  }
+}
+
+

@@ -69,8 +69,8 @@ body {
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
-.marketing {
-
+.marketing { 
+	margin-top: 18px;
 }
 
 /* Center align the text within the three columns below the carousel */

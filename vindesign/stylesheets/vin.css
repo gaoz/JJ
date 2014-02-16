@@ -134,7 +134,7 @@ ul, ol {
 	height:400px;
 	margin: 5px;
     background: none repeat scroll 0% 0% rgb(255, 255, 255);
-    border: 2px solid #F30;
+    border: 2px solid #F60;
     color: rgb(136, 136, 136);
     float: left;
     font-size: 0.9em;
@@ -149,7 +149,7 @@ ul, ol {
 }
 .story h2{
 	font-size: small;
-	color: #FF6699;
+	color: #FF6666;
 }
 @media only screen and (min-width: 250px) {
 .col-lg-1,
@@ -299,5 +299,3 @@ ul, ol {
 	width: 1000px;
   }
 }
-
-

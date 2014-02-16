@@ -11,7 +11,9 @@
 	height: 300px;
 	background-color: #FC9;
 	background-image: url(../images/newsbg.png);	
-
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	line-height: 1.4;
 
 }
 
@@ -25,7 +27,7 @@
 	font-size: x-large;
 	text-align: center;
 	border-bottom: 1px solid #888;
-	font-family: georgia,serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;	
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;

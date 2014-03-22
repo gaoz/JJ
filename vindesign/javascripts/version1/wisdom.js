@@ -183,8 +183,8 @@
 var map;
 function initialize() {
     var mapOptions = {
-        zoom: 15,
-        center: new google.maps.LatLng(34.052234, -117.243685),
+        zoom: 45,
+        center: new google.maps.LatLng(21.284196, -157.802090),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById('gmap'),

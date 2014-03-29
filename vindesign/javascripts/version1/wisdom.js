@@ -181,16 +181,62 @@
 
 });
 var map;
+var jj = new google.maps.LatLng(21.284196, -157.802090);
 function initialize() {
+				<!-- Set mapOptions -->
+				var mapOptions = {
+					center: jj,
+					zoom: 45,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+				};
+				<!-- Create Google Map -->
+				map = new google.maps.Map(document.getElementById("gmap"), mapOptions);
+				
+				<!-- Create string for info window -->
+				var infoString = '<div><a href="./view-garden.html">Garden 1</a></div><img src="./public/images/gardens/1.jpg" height="100px" width="100px"/>';
+				
+				<!-- Create info window -->
+				var infoWindow = new google.maps.InfoWindow({
+					content: infoString
+				});
+				
+				<!-- Create a marker -->
+				marker = new google.maps.Marker({
+					title: 'Test Marker',
+					map: map,
+					animation: google.maps.Animation.DROP,
+					position: oahu
+				});
+				
+				<!-- Add listeners to marker -->
+				<!-- google.maps.event.addListener(marker, 'click', toggleBounce); -->
+				google.maps.event.addListener(marker, 'click', function() {infoWindow.open(map,marker);});
+			}
+			
+			<!-- Toggles bounce animation on marker (on click) -->
+			function toggleBounce() {
+				if (marker.getAnimation() != null) {
+					marker.setAnimation(null);
+				}
+				else {
+					marker.setAnimation(google.maps.Animation.BOUNCE);
+				}
+			}
+			
+			<!-- Initialize Google Maps on page load -->
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, 'resize', initialize);
+
+/*function initialize() {
     var mapOptions = {
         zoom: 45,
         center: new google.maps.LatLng(21.284196, -157.802090),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.HYBRID
     };
     map = new google.maps.Map(document.getElementById('gmap'),
         mapOptions);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
+*/
 

@@ -147,6 +147,7 @@
   .span3 {
     width: 270px;
   }
+ 
   .span2 {
     width: 170px;
   }
@@ -421,6 +422,7 @@
   .uneditable-input.span3 {
     width: 256px;
   }
+ 
   input.span2,
   textarea.span2,
   .uneditable-input.span2 {
@@ -496,6 +498,7 @@
   .span3 {
     width: 166px;
   }
+ 
   .span2 {
     width: 104px;
   }
@@ -770,6 +773,7 @@
   .uneditable-input.span3 {
     width: 152px;
   }
+
   input.span2,
   textarea.span2,
   .uneditable-input.span2 {
